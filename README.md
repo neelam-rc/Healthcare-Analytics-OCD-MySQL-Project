@@ -1,8 +1,8 @@
-# Health Analysis SQL Portfolio Project
+# Healthcare Analysis SQL Portfolio Project
 
 ## Project Overview
 
-**Project Title**: Health Analytics-OCD Diagnosis Analysis  
+**Project Title**: Healthcare Analytics-OCD Diagnosis Analysis  
 **Database**: `healthcare_database`
 **Tables**: `ocd_patient_data` and `ocd_patient_healthcare`
 
