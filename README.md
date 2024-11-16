@@ -180,9 +180,9 @@ GROUP BY 1
 
 The analysis reveals some key trends, including:
 
--**A strong link between having a family history of OCD and higher rates of anxiety and depression.
--**Gender and family history play important roles in how common OCD and related conditions are.
--**Anxiety often appears alongside OCD, showing a common overlap.
+- A strong link between having a family history of OCD and higher rates of anxiety and depression.
+- Gender and family history play important roles in how common OCD and related conditions are.
+- Anxiety often appears alongside OCD, showing a common overlap.
 
 These insights point to areas where further research could be valuable, like focusing on higher-risk groups, such as people with a family history of OCD, or understanding specific obsession types that are more common in certain populations.
 
