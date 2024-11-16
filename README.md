@@ -205,9 +205,3 @@ This project is part of my SQL portfolio.
 
 Thank you!
 
-### Links
-
-- **LinkedIn**: (https://www.linkedin.com/in/neelamrc)
-- **Tableau**: (https://public.tableau.com/app/profile/neelamrc)
-
-Thank you!
