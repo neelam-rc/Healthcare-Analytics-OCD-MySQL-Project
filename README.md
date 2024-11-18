@@ -32,7 +32,7 @@ This project analyzes the relationship between OCD diagnoses and depression/anxi
 Later, create stage table `ocd_patient_data` and use for further analysis.
 
 ```sql
- CREATE DATABASE healthcare_database
+CREATE DATABASE healthcare_database
 USE healthcare_database;
 
 SELECT COUNT(*)
@@ -72,10 +72,10 @@ WHERE `Anxiety Diagnosis` = 'Yes'
 SELECT COUNT(`Patient ID`) as total_ocd
      , COUNT(CASE gender WHEN 'Male' THEN 1 END) AS male_count
      , COUNT(CASE gender WHEN 'Female' THEN 1 END) AS female_count
-	-- Calculate percentage of male patients with OCD diagnosis
-     , ROUND((SUM(CASE gender WHEN 'Male' THEN 1 END)/COUNT(*)*100),2) AS male_count
+  -- Calculate percentage of male patients with OCD diagnosis
+     , ROUND((SUM(CASE gender WHEN 'Male' THEN 1 END)/COUNT(*)*100),2) AS male_percent
   -- Calculate percentage of female patients with OCD diagnosis
-     , ROUND((SUM(CASE gender WHEN 'Female' THEN 1 END)/COUNT(*)*100),2) AS female_count
+     , ROUND((SUM(CASE gender WHEN 'Female' THEN 1 END)/COUNT(*)*100),2) AS female_percent
 FROM ocd_patient_healthcare
 ;
 ```
@@ -113,7 +113,7 @@ MODIFY `OCD Diagnosis Date` DATE
 -- Query:
 
 SELECT date_format(`OCD Diagnosis Date`, '%Y-%m') AS OCD_diagnosis_date
-	   , COUNT(`Patient ID`) patient_count
+     , COUNT(`Patient ID`) patient_count
 FROM ocd_patient_data
 GROUP BY 1
 ORDER BY 1
@@ -123,7 +123,7 @@ ORDER BY 1
 5. **Identify the most common type of obsession and its corresponding average obsession score.**:
 ```sql
 SELECT `Obsession Type`
-	   , ROUND(AVG(`Y-BOCS Score (Obsessions)`),2) avg_obsession_score
+     , ROUND(AVG(`Y-BOCS Score (Obsessions)`),2) avg_obsession_score
 FROM ocd_patient_data
 GROUP BY 1
 ORDER BY 2 DESC
