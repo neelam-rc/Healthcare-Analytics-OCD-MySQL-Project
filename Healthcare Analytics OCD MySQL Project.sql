@@ -18,9 +18,9 @@ SELECT COUNT(`Patient ID`) as total_ocd
      , COUNT(CASE gender WHEN 'Male' THEN 1 END) AS male_count
      , COUNT(CASE gender WHEN 'Female' THEN 1 END) AS female_count
 	-- Calculate percentage of male patients with OCD diagnosis
-     , ROUND((SUM(CASE gender WHEN 'Male' THEN 1 END)/COUNT(*)*100),2) AS male_count
+     , ROUND((SUM(CASE gender WHEN 'Male' THEN 1 END)/COUNT(*)*100),2) AS male_percent
      -- Calculate percentage of female patients with OCD diagnosis
-     , ROUND((SUM(CASE gender WHEN 'Female' THEN 1 END)/COUNT(*)*100),2) AS female_count
+     , ROUND((SUM(CASE gender WHEN 'Female' THEN 1 END)/COUNT(*)*100),2) AS female_percent
 FROM ocd_patient_healthcare
 ;
 
