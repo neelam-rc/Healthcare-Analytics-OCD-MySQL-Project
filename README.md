@@ -6,7 +6,7 @@
 **Database**: `healthcare_database`
 **Tables**: `ocd_patient_data` and `ocd_patient_healthcare`
 
-This project analyzes the relationship between OCD diagnoses and depression/anxiety based on various factors like family history of OCD, ethnicity, gender, and more. It includes calculations such as the total number of diagnosed individuals, percentage breakdowns, and averages of key scores related to OCD and depression, along with exploratory data analysis (EDA). After the analysis, data visualization and dashboard development was using Power BI. The dataset used in this analysis was collected from a YouTube channel of Stacey Samoe. 
+This project analyzes the relationship between OCD diagnoses and depression/anxiety based on various factors like family history of OCD, ethnicity, gender, and more. It includes calculations such as the total number of diagnosed individuals, percentage breakdowns, and averages of key scores related to OCD and depression, along with exploratory data analysis (EDA). After the analysis, data visualization and dashboard development was built using Power BI. The dataset used in this analysis was collected from a YouTube channel of Stacey Samoe. 
 
 ## Objectives
 
